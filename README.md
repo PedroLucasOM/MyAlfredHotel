@@ -1,6 +1,8 @@
 # MyAlfredHotel
 API para busca e cadastro de hotéis
 
+---
+
 ## Ambiente myalfred
    - Nas distribuições do linux / Mac:
       source myalfred/bin/activate
