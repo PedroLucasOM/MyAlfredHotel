@@ -10,7 +10,12 @@ class HoteisResource(Resource):
 class HotelResource(Resource):
     argumentos = reqparse.RequestParser()
     argumentos.add_argument('nome')
+    argumentos.add_argument('classificacao')
+    argumentos.add_argument('cep')
+    argumentos.add_argument('logradouro')
+    argumentos.add_argument('bairro')
     argumentos.add_argument('cidade')
+    argumentos.add_argument('estado')
 
     def find_hotel(id):
         for hotel in hoteis:
