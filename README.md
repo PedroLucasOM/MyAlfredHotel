@@ -4,9 +4,9 @@ API para busca e cadastro de hotéis
 ---
 
 ## Ambiente myalfred
-   - Nas distribuições do linux / Mac:
+  **Nas distribuições do linux / Mac**
       source myalfred/bin/activate
-   - No Windows:
+   **No Windows**
       ./myalfred/Scripts/activate.bat
 
 ---
