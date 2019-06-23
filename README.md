@@ -1,7 +1,7 @@
 # MyAlfredHotel
 API para busca e cadastro de hotéis
 
-- Para entrar no ambiente myalfred já configurado com as dependências do projeto:
+## Ambiente myalfred
    - Nas distribuições do linux / Mac:
       source myalfred/bin/activate
    - No Windows:
@@ -9,5 +9,5 @@ API para busca e cadastro de hotéis
 
 ---
 
-- Para rodar a aplicação:
+## Execução
         python app.py
