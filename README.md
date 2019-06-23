@@ -4,12 +4,16 @@ API para busca e cadastro de hotéis
 ---
 
 ## Ambiente myalfred
-  **Nas distribuições do linux / Mac**
-      source myalfred/bin/activate
-   **No Windows**
-      ./myalfred/Scripts/activate.bat
+**Nas distribuições do linux / Mac**
+
+source myalfred/bin/activate
+
+ **No Windows**
+
+./myalfred/Scripts/activate.bat
 
 ---
 
 ## Execução
-        python app.py
+
+python app.py
