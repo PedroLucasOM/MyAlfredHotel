@@ -5,13 +5,13 @@
 ---
 
 ## Ambiente myalfred
-        **Nas distribuições do linux / Mac**
+  **Nas distribuições do linux / Mac**
 
-                      source myalfred/bin/activate
+        source myalfred/bin/activate
 
-        **No Windows**
+**No Windows**
 
-                      ./myalfred/Scripts/activate.bat
+        ./myalfred/Scripts/activate.bat
 
 ---
 
