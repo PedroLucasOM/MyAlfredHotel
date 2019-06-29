@@ -1,4 +1,17 @@
-class HotelModel:
+from sql_alchemy import banco
+
+class HotelModel(banco.Model):
+    __tablename__ = 'hoteis'
+
+    id = banco.Column(banco.Integer, primary_key=True)
+    nome = banco.Column(banco.String(100))
+    classificacao = banco.Column(banco.Float(precision=1))
+    cep = banco.Column(banco.String(20))
+    logradouro = banco.Column(banco.String(100))
+    bairro = banco.Column(banco.String(100))
+    cidade = banco.Column(banco.String(100))
+    estado = banco.Column(banco.String(100))
+
     def __init__(self, id, nome, classificacao, cep, logradouro, bairro, cidade, estado):
         self.id = id
         self.nome = nome
