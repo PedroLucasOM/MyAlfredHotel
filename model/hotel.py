@@ -37,7 +37,7 @@ class HotelModel(database.Model):
         }
 
     @classmethod
-    def find(cls, id):
+    def findById(cls, id):
         hotel = cls.query.filter_by(id=id).first()
         if hotel:
             return hotel
@@ -45,7 +45,7 @@ class HotelModel(database.Model):
 
     @classmethod
     def findExists(cls, id):
-        hotel = HotelModel.find(id)
+        hotel = HotelModel.findById(id)
         if hotel:
             return hotel
         raise BadRequest('The informed hotel does not exist.')
