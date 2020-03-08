@@ -15,8 +15,7 @@ class HotelModel(database.Model):
     city = database.Column(database.String(100), nullable=False)
     state = database.Column(database.String(100), nullable=False)
 
-    def __init__(self, id, name, classification, cep, address, neighborhood, city, state):
-        self.id = id
+    def __init__(self, name, classification, cep, address, neighborhood, city, state):
         self.name = name
         self.classification = classification
         self.cep = cep
@@ -55,7 +54,7 @@ class HotelModel(database.Model):
         database.session.add(self)
         database.session.commit()
 
-    def update(self, id, name, classification, cep, address, neighborhood, city, state):
+    def update(self, name, classification, cep, address, neighborhood, city, state):
         self.name = name
         self.classification = classification
         self.cep = cep

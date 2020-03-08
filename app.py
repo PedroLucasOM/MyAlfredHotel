@@ -17,7 +17,7 @@ def create_tables():
 
 
 api.add_resource(HotelResourceAll, '/hotels')
-api.add_resource(HotelResource, '/hotels', '/hotels/<string:id>')
+api.add_resource(HotelResource, '/hotels', '/hotels/<int:id>')
 
 if __name__ == '__main__':
     app.run(debug=True)

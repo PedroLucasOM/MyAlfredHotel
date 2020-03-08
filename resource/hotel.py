@@ -6,7 +6,6 @@ from utils.utils import non_empty_string
 
 
 def addArgs(arguments):
-    arguments.add_argument('id')
     arguments.add_argument('name', type=non_empty_string, required=True, nullable=False,
                            help='The field Name cannot be left blank')
     arguments.add_argument('classification', required=True, nullable=False, type=float,
