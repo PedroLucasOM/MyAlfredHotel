@@ -1,51 +1,55 @@
 from flask_restful import Resource, reqparse
+from werkzeug.exceptions import NotFound
+
 from model.hotel import HotelModel
 
-hoteis = []
 
-class HoteisResource(Resource):
+def addArgs(arguments):
+    arguments.add_argument('id')
+    arguments.add_argument('name')
+    arguments.add_argument('classification')
+    arguments.add_argument('cep')
+    arguments.add_argument('address')
+    arguments.add_argument('neighborhood')
+    arguments.add_argument('city')
+    arguments.add_argument('state')
+
+
+class HotelResourceAll(Resource):
+    arguments = reqparse.RequestParser()
+    addArgs(arguments)
+
     def get(self):
-        return hoteis
+        return [hotel.json() for hotel in HotelModel.query.all()]
+
+    def post(self):
+        arguments = reqparse.RequestParser()
+        addArgs(arguments)
+
+        data = HotelResource.arguments.parse_args()
+        hotel = HotelModel(**data)
+        hotel.save()
+        return hotel.json(), 201
+
 
 class HotelResource(Resource):
-    argumentos = reqparse.RequestParser()
-    argumentos.add_argument('nome')
-    argumentos.add_argument('classificacao')
-    argumentos.add_argument('cep')
-    argumentos.add_argument('logradouro')
-    argumentos.add_argument('bairro')
-    argumentos.add_argument('cidade')
-    argumentos.add_argument('estado')
-
-    def find_hotel(id):
-        for hotel in hoteis:
-            if(hotel['id'] == id):
-                return hotel
-        return None
+    arguments = reqparse.RequestParser()
+    addArgs(arguments)
 
     def get(self, id):
-        hotel = HotelResource.find_hotel(id)
+        hotel = HotelModel.find(id)
         if hotel:
-            return hotel
-        return {'message' : 'Hotel not found'}, 404
-
-
-    def post(self, id):
-        dados = HotelResource.argumentos.parse_args()
-        hotel = HotelModel(id, **dados).json()
-        hoteis.append(hotel)
-        return hotel, 201
+            return hotel.json()
+        raise NotFound('Hotel not found')
 
     def put(self, id):
-        hotel_salvo = HotelResource.find_hotel(id)
-        if hotel_salvo:
-            dados = HotelResource.argumentos.parse_args()
-            hotel = HotelModel(id, **dados).json()
-            hotel_salvo.update(hotel)
-            return hotel_salvo, 200
-        return {'message': 'Hotel not found'}, 404
+        saved_hotel = HotelModel.findExists(id)
+        data = HotelResource.arguments.parse_args()
+        saved_hotel.update(**data)
+        saved_hotel.save()
+        return saved_hotel.json(), 200
 
     def delete(self, id):
-        global hoteis
-        hoteis = [hotel for hotel in hoteis if hotel['id'] != id]
-        return {'message': 'Hotel deleted'}, 204
+        hotel = HotelModel.findExists(id)
+        hotel.delete()
+        return 204
