@@ -10,6 +10,7 @@
   Execute o seguinte comando na raiz do projeto:
         
         pip3 install virtualenv
+        
         virtualenv myalfred
 
   ### Ativando o ambiente virtual
