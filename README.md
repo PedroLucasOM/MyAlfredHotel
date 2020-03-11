@@ -23,7 +23,7 @@
   ### Instalação de dependências
   Com o ambiente virtual já ativado, execute o seguinte comando na raiz do projeto:
         
-         pip install -r requirements.txt
+         pip3 install -r requirements.txt
 ---
 
 ## Execução
