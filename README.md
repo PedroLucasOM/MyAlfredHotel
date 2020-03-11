@@ -9,7 +9,7 @@
   ### Criando o ambiente virtual
   Execute o seguinte comando na raiz do projeto:
         
-        python3 -m venv venv
+        python3 -m venv myalfred
 
   ### Ativando o ambiente virtual
   **Nas distribuições do linux / Mac**
