@@ -9,7 +9,8 @@
   ### Criando o ambiente virtual
   Execute o seguinte comando na raiz do projeto:
         
-        python3 -m venv myalfred
+        pip3 install virtualenv
+        virtualenv myalfred
 
   ### Ativando o ambiente virtual
   **Nas distribuições do linux / Mac**
@@ -18,7 +19,7 @@
 
   **No Windows**
 
-        ./myalfred/Scripts/activate.bat
+        myalfred\Scripts\activate.bat
 
   ### Instalação de dependências
   Com o ambiente virtual já ativado, execute o seguinte comando na raiz do projeto:
