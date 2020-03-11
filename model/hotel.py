@@ -14,8 +14,9 @@ class HotelModel(database.Model):
     neighborhood = database.Column(database.String(100), nullable=False)
     city = database.Column(database.String(100), nullable=False)
     state = database.Column(database.String(100), nullable=False)
+    id_site = database.Column(database.Integer, database.ForeignKey('sites.id'))
 
-    def __init__(self, name, classification, cep, address, neighborhood, city, state):
+    def __init__(self, name, classification, cep, address, neighborhood, city, state, id_site):
         self.name = name
         self.classification = classification
         self.cep = cep
@@ -23,6 +24,7 @@ class HotelModel(database.Model):
         self.neighborhood = neighborhood
         self.city = city
         self.state = state
+        self.id_site = id_site
 
     def json(self):
         return {
@@ -33,7 +35,8 @@ class HotelModel(database.Model):
             'address': self.address,
             'neighborhood': self.neighborhood,
             'city': self.city,
-            'state': self.state
+            'state': self.state,
+            'id_site': self.id_site
         }
 
     @classmethod

@@ -20,6 +20,8 @@ arguments.add_argument('city', type=non_empty_string, required=True, nullable=Fa
                        help='The field City cannot be left blank')
 arguments.add_argument('state', type=non_empty_string, required=True, nullable=False,
                        help='The field State cannot be left blank')
+arguments.add_argument('id_site', type=int, required=True, nullable=False,
+                       help="Every hotel needs to be linked with a site.")
 
 
 class HotelResourceAll(Resource):

@@ -4,6 +4,7 @@ from flask_restful import Api
 
 from blacklist import BLACKLIST
 from resource.hotel import HotelResource, HotelResourceAll
+from resource.site import SiteResource, SiteResourceAll
 from resource.user import UserResource, UserResourceAll, UserLoginResource, UserLogoutResource
 from sql_alchemy import database
 
@@ -35,6 +36,8 @@ def invalid_token():
 
 api.add_resource(HotelResourceAll, '/hotels')
 api.add_resource(HotelResource, '/hotels/<int:id>')
+api.add_resource(SiteResourceAll, '/sites')
+api.add_resource(SiteResource, '/sites/<int:id>')
 api.add_resource(UserResourceAll, '/users')
 api.add_resource(UserResource, '/users/<int:id>')
 api.add_resource(UserLoginResource, '/login')

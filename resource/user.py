@@ -1,6 +1,6 @@
 from flask_jwt_extended import create_access_token, jwt_required, get_raw_jwt
 from flask_restful import Resource, reqparse
-from werkzeug.exceptions import NotFound
+from werkzeug.exceptions import NotFound, BadRequest
 from werkzeug.security import safe_str_cmp
 
 from blacklist import BLACKLIST
@@ -43,6 +43,8 @@ class UserResourceAll(Resource):
 
     def post(self):
         data = arguments.parse_args()
+        if UserModel.findByLogin(data['login']):
+            return BadRequest('The informed login already exists.')
         user = UserModel(**data)
         user.save()
         return user.json(), 201
