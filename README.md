@@ -1,6 +1,6 @@
 # MyAlfredHotel
 
-  API para busca e cadastro de hotéis
+  API para manipulação de hoteis e sites de anúncios de hoteis com autenticação OAUTH
 
 ---
 
