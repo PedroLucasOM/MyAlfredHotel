@@ -66,4 +66,3 @@ Copyright © 2020 [Pedro Lucas](https://github.com/PedroLucasOM).<br />
 This project is [FLASK](https://github.com/PedroLucasOM/MyAlfredHotel/blob/master/LICENSE.rst) licensed.
 
 ***
-_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
