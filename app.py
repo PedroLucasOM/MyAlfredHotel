@@ -5,7 +5,7 @@ from flask_restful import Api
 from blacklist import BLACKLIST
 from resource.hotel import HotelResource, HotelResourceAll
 from resource.site import SiteResource, SiteResourceAll
-from resource.user import UserResource, UserResourceAll, UserLoginResource, UserLogoutResource
+from resource.user import UserResource, UserResourceAll, UserLoginResource, UserLogoutResource, UserConfirm
 from sql_alchemy import database
 
 app = Flask(__name__)
@@ -40,6 +40,7 @@ api.add_resource(SiteResourceAll, '/sites')
 api.add_resource(SiteResource, '/sites/<int:id>')
 api.add_resource(UserResourceAll, '/users')
 api.add_resource(UserResource, '/users/<int:id>')
+api.add_resource(UserConfirm, '/confirm/<int:id>')
 api.add_resource(UserLoginResource, '/login')
 api.add_resource(UserLogoutResource, '/logout')
 
