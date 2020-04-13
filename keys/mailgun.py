@@ -1,0 +1,4 @@
+MAILGUN_DOMAIN = ''
+MAILGUN_API_KEY = ''
+FROM_TITLE = 'NO-REPLY'
+FROM_EMAIL = 'pedro99lucasom@gmail.com'

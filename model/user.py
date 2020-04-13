@@ -2,12 +2,8 @@ from flask import request, url_for, render_template
 from requests import post
 from werkzeug.exceptions import BadRequest
 
+from keys.mailgun import MAILGUN_API_KEY, MAILGUN_DOMAIN, FROM_TITLE, FROM_EMAIL
 from sql_alchemy import database
-
-MAILGUN_DOMAIN = ''
-MAILGUN_API_KEY = ''
-FROM_TITLE = 'NO-REPLY'
-FROM_EMAIL = 'pedro99lucasom@gmail.com'
 
 
 class UserModel(database.Model):
