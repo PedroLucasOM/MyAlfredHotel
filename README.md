@@ -1,8 +1,8 @@
 <h1 align="center">Welcome to MyAlfredHotel 👋</h1>
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
-  <img src="https://img.shields.io/badge/npm-%3E%3D5.5.0-blue.svg" />
-  <img src="https://img.shields.io/badge/node-%3E%3D9.3.0-blue.svg" />
+  <img src="https://img.shields.io/badge/Flask-1.1.1-blue.svg" />
+  <img src="https://img.shields.io/badge/FlaskRESTful-0.3.8-blue.svg" />
   <a href="https://github.com/PedroLucasOM/MyAlfredHotel#readme" target="_blank">
     <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
   </a>
@@ -23,25 +23,48 @@
 
 ## Prerequisites
 
-- npm >=5.5.0
-- node >=9.3.0
+- aniso8601==8.0.0
+- api==0.0.7
+- certifi==2019.11.28
+- chardet==3.0.4
+- Click==7.0
+- Flask==1.1.1
+- Flask-JWT-Extended==3.24.1
+- Flask-RESTful==0.3.8
+- Flask-SQLAlchemy==2.4.1
+- idna==2.9
+- itsdangerous==1.1.0
+- Jinja2==2.11.1
+- MarkupSafe==1.1.1
+- nose==1.3.7
+- PyJWT==1.7.1
+- pytz==2019.3
+- requests==2.23.0
+- six==1.14.0
+- SQLAlchemy==1.3.13
+- urllib3==1.25.8
+- Werkzeug==1.0.0
 
 ## Install
 
 ```sh
-npm install
+pip3 install virtualenv
 ```
 
 ## Usage
 
 ```sh
-npm run start
+virtualenv myalfred
 ```
 
-## Run tests
+```sh
+pip3 install -r requirements.txt
+```
+
+## Run
 
 ```sh
-npm run test
+python3 app.py
 ```
 
 ## Author
@@ -66,4 +89,3 @@ Copyright © 2020 [Pedro Lucas](https://github.com/PedroLucasOM).<br />
 This project is [FLASK](https://github.com/PedroLucasOM/MyAlfredHotel/blob/master/LICENSE.rst) licensed.
 
 ***
-_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
