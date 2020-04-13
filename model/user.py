@@ -4,8 +4,8 @@ from werkzeug.exceptions import BadRequest
 
 from sql_alchemy import database
 
-MAILGUN_DOMAIN = 'sandboxcfabe88e830f415086a882d0c8b1ed6f.mailgun.org'
-MAILGUN_API_KEY = '0563b015a7adbe26a8e845376a387d4a-aa4b0867-45f82a37'
+MAILGUN_DOMAIN = ''
+MAILGUN_API_KEY = ''
 FROM_TITLE = 'NO-REPLY'
 FROM_EMAIL = 'pedro99lucasom@gmail.com'
 
