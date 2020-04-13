@@ -67,10 +67,19 @@ To use the confirmation e-mail service when registering, create an account at:
 
 https://www.mailgun.com/
 
-After that, put your Sandbox Domain and API Key credentials in the file:
+After that, create this file with the following directory:
 
 ```sh
-./model/user.py
+keys/mailgun.py
+```
+
+Now place the following content in the file:
+
+```sh
+MAILGUN_DOMAIN = 'YOUR-MAILGUN-SANDBOX-DOMAIN'
+MAILGUN_API_KEY = 'YOUR-MAILGUN-API-KEY'
+FROM_TITLE = 'NO-REPLY'
+FROM_EMAIL = 'YOUR-EMAIL'
 ```
 
 ## Run
