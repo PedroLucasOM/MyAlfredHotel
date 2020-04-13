@@ -61,6 +61,16 @@ virtualenv myalfred
 pip3 install -r requirements.txt
 ```
 
+### Mailgun API
+
+To use the confirmation e-mail service when registering, create an account at:
+
+https://www.mailgun.com/
+
+After that, put your Sandbox Domain and API Key credentials in the file:
+
+./model/user.py
+
 ## Run
 
 ```sh
