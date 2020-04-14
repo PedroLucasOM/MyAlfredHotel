@@ -1,7 +1,3 @@
-<p align="center">
-  ![Logo](https://github.com/PedroLucasOM/MyAlfredHotel/blob/master/images/logo.png)
-</p>
-
 <h1 align="center">Welcome to MyAlfredHotel 👋</h1>
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
