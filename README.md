@@ -94,7 +94,7 @@ python3 app.py
 
 * Twitter: [@PedroLucasOM](https://twitter.com/PedroLucasOM)
 * Github: [@PedroLucasOM](https://github.com/PedroLucasOM)
-* LinkedIn: [@pedro-lucas-matos-975821181](https://linkedin.com/in/pedro-lucas-matos-975821181)
+* LinkedIn: [@PedroLucasOM](https://linkedin.com/in/PedroLucasOM)
 
 ## 🤝 Contributing
 
