@@ -7,7 +7,7 @@
     <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-green.svg" />
   </a>
   <a href="https://github.com/kefranabg/readme-md-generator/graphs/commit-activity" target="_blank">
-    <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
+    <img alt="Maintenance" src="https://img.shields.io/badge/maintained-yes-green.svg" />
   </a>
   <a href="https://github.com/PedroLucasOM/MyAlfredHotel/blob/master/LICENSE.rst" target="_blank">
     <img alt="License: FLASK" src="https://img.shields.io/github/license/PedroLucasOM/MyAlfredHotel" />
