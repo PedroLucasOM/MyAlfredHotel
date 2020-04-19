@@ -59,13 +59,13 @@ virtualenv myalfred
 
 #### Activating the virtual environment
 
-**For Linux / Mac distributions**
+###### For Linux / Mac distributions
 
-        source wumpus/bin/activate
+        source myalfred/bin/activate
 
-**For Windows**
+###### For Windows
 
-        wumpus\Scripts\activate.bat
+        myalfred\Scripts\activate.bat
 
 #### Installing the requirements
 
