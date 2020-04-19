@@ -53,6 +53,8 @@ pip3 install virtualenv
 
 ## Usage
 
+#### Creating the virtual environment
+
 ```sh
 virtualenv myalfred
 ```
