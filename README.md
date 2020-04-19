@@ -77,7 +77,7 @@ myalfred\Scripts\activate.bat
 #### Installing the requirements
 
 ```sh
-pip3 install -r requirements.txt
+pip3 install -r requeriments.txt
 ```
 
 ## Mailgun API
