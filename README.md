@@ -1,9 +1,9 @@
 <h1 align="center">Welcome to MyAlfredHotel 👋</h1>
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
-  <img src="https://img.shields.io/badge/Python-3.8.2-blue.svg" />
-  <img src="https://img.shields.io/badge/Flask-1.1.1-blue.svg" />
-  <img src="https://img.shields.io/badge/FlaskRESTful-0.3.8-blue.svg" />
+  <img src="https://img.shields.io/badge/python-3.8.2-blue.svg" />
+  <img src="https://img.shields.io/badge/flask-1.1.1-blue.svg" />
+  <img src="https://img.shields.io/badge/flaskRESTful-0.3.8-blue.svg" />
   <a href="https://github.com/PedroLucasOM/MyAlfredHotel#readme" target="_blank">
     <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-green.svg" />
   </a>
