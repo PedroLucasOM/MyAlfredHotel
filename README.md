@@ -57,6 +57,18 @@ pip3 install virtualenv
 virtualenv myalfred
 ```
 
+#### Activating the virtual environment
+
+**For Linux / Mac distributions**
+
+        source wumpus/bin/activate
+
+**For Windows**
+
+        wumpus\Scripts\activate.bat
+
+#### Installing the requirements
+
 ```sh
 pip3 install -r requirements.txt
 ```
