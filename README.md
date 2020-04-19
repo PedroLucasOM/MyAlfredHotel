@@ -61,11 +61,15 @@ virtualenv myalfred
 
 ###### For Linux / Mac distributions
 
-        source myalfred/bin/activate
+```sh
+source myalfred/bin/activate
+```
 
 ###### For Windows
 
-        myalfred\Scripts\activate.bat
+```sh
+myalfred\Scripts\activate.bat
+```
 
 #### Installing the requirements
 
