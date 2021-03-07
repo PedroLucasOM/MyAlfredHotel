@@ -18,7 +18,7 @@
   </a>
 </p>
 
-> API for handling hotels with user control - including email confirmation - and hotel sites for advertisements. It has security with OAUTH and SQLite database.
+> :computer: API for handling hotels with user control - including email confirmation :mailbox: - and hotel sites for advertisements. It has security with OAUTH :closed_lock_with_key: and SQLite database :snake:.
 
 ### 🏠 [Homepage](https://github.com/PedroLucasOM/MyAlfredHotel)
 
